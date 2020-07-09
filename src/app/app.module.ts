@@ -11,12 +11,14 @@ import { UserCardComponent } from './components/users/user-card/user-card.compon
 import { UserListComponent } from './components/users/user-list/user-list.component';
 
 import { AppConfigService } from './services/config/app-config.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserCardComponent,
-    UserListComponent
+    UserListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,28 @@
+<mat-card class="card">
+    <mat-card-title class="card-title">
+        <span id="username-title">{{ username }}</span>
+        <mat-icon class="account-icon">face</mat-icon>
+    </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-grid-list class="card-content" cols="4" rowHeight="100px">
+        <mat-grid-tile colspan="2" rowspan="2">
+            <img id="profile-picture" class="profile-image" [src]="imageURL" alt="Profile photo">
+        </mat-grid-tile>
+        <mat-grid-tile colspan="2" rowspan="1">
+            <mat-card-actions>
+                <button id="explore-button" mat-raised-button color="primary" routerLink="repos">
+                    <mat-icon>explore</mat-icon>
+                    Explore repo
+                </button>
+            </mat-card-actions>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="2" rowspan="1">
+            <mat-card-actions>
+                <button id="github-button" mat-raised-button color="accent" (click)="openGitHub()">
+                    <mat-icon>code</mat-icon>
+                    Open GitHub
+                </button>
+            </mat-card-actions>
+        </mat-grid-tile>
+    </mat-grid-list>
+</mat-card>

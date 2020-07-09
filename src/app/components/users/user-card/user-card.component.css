@@ -1,0 +1,20 @@
+.card {
+    max-width: 400px;
+}
+
+.card-content {
+    margin-top: 30px;
+}
+
+.card-title {
+    font-style: italic;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+}
+
+.account-icon {
+    float: right;
+}

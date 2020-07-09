@@ -10,7 +10,7 @@ describe('AppConfigService', () => {
     service = TestBed.inject(AppConfigService);
   });
 
-  /*it('should be created', () => {
+  it('should be created', () => {
     expect(service).toBeTruthy();
-  });*/
+  });
 });

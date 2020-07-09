@@ -5,13 +5,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 const MATERIAL_COMPONENTS = [
   MatButtonModule,
   MatCardModule,
   MatGridListModule,
   MatDividerModule,
-  MatIconModule
+  MatIconModule,
+  MatToolbarModule
 ];
 
 @NgModule({

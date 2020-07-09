@@ -20,9 +20,17 @@ export class AppConfigService {
       });
   }
 
-  getUsersURL() {
+  getUsersURL(): string {
     if (this.appConfig) {
       return this.appConfig.githubAPI.url + this.appConfig.githubAPI.get.users;
+    } else {
+      return '';
+    }
+  }
+
+  getReposURL(username: string, page: string): string {
+    if (this.appConfig) {
+      return this.appConfig.githubAPI.url + this.appConfig.githubAPI.get.repos.replace('USERNAME', username).replace('PAGENUMBER', page);
     } else {
       return '';
     }

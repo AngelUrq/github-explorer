@@ -11,7 +11,7 @@ export class UserService {
   getURL: string = '';
 
   constructor(private _http: HttpClient, private _config: AppConfigService) { 
-    this.getURL = _config.getUsersURL();
+    this.getURL = this._config.getUsersURL();
   }
 
   get(next: string): Observable<any> {

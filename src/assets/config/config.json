@@ -2,7 +2,8 @@
     "githubAPI": {
         "url": "https://api.github.com",
         "get": {
-            "users": "/users?per_page=4"
+            "users": "/users?per_page=4",
+            "repos": "/users/USERNAME/repos?per_page=4&page=PAGENUMBER"
         }
     }
 }

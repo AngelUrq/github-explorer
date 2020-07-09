@@ -1,0 +1,11 @@
+<div class="repo-container">
+    <mat-card *ngIf="repos.length === 0">
+        No repos were found
+    </mat-card>
+    <repo-card *ngFor="let repo of repos">
+        
+    </repo-card>
+    <button id="next-button" class="btn" mat-raised-button color="warn" (click)="getUsers()">
+        <mat-icon>arrow_right_alt</mat-icon>
+    </button>
+</div>

@@ -1,0 +1,8 @@
+{
+    "githubAPI": {
+        "url": "https://api.github.com",
+        "get": {
+            "users": "/users?per_page=4"
+        }
+    }
+}

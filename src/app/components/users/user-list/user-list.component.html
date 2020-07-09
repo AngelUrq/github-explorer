@@ -1,1 +1,11 @@
-<user-card username="AngelUrq" profileURL="https://www.github.com/AngelUrq" imageURL="https://i.stack.imgur.com/frlIf.png"></user-card>
+<div class="user-container">
+    <user-card class="user-card" *ngFor="let user of users"
+        [id]="user.login"
+        [username]="user.login" 
+        [profileURL]="user.html_url" 
+        [imageURL]="user.avatar_url">
+    </user-card>
+    <button id="next-button" class="btn" mat-raised-button color="warn" (click)="getUsers()">
+        <mat-icon>arrow_right_alt</mat-icon>
+    </button>
+</div>

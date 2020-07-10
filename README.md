@@ -1,27 +1,25 @@
 # GithubExplorer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+This project uses the GitHub REST API v3 to get a list of users and their repositories. It is developed in Angular 10, with Angular Material as CSS Framework.
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Users Page
 
-## Code scaffolding
+Here is a GitHub users list, contains info like their profile picture, username, a link to GitHub page and a button to explore their repositories. Click on the arrow to get the next 4 users.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Users page](https://imgur.com/Azmyicy)
 
-## Build
+### Repos Page
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Once a user is selected, a list of repositories will show up, it contains info about the repo name, description, number of forks, number of issues and a link to GitHub. This section is paginated, so you can click in the arrows to go the next page.
+
+![Repos page](https://imgur.com/WSFyWKl)
+
+### Cache
+
+All data retrieved from API will be stored in the local storage for the next two hours, so the next time you refresh the app this data will be loaded from the cache.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

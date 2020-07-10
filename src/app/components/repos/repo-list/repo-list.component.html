@@ -2,10 +2,10 @@
     <mat-card *ngIf="repos.length === 0">
         No repos were found
     </mat-card>
-    <repo-card *ngFor="let repo of repos">
-        
+    <repo-card class="repo-card" *ngFor="let repo of repos" [id]="repo.name" [name]="repo.name" [url]="repo.html_url"
+        [description]="repo.description ? repo.description : 'No description available'" [forks]="repo.forks_count"
+        [openIssues]="repo.open_issues_count">
     </repo-card>
-    <button id="next-button" class="btn" mat-raised-button color="warn" (click)="getUsers()">
-        <mat-icon>arrow_right_alt</mat-icon>
-    </button>
 </div>
+<mat-paginator [length]="totalCount" [pageIndex]="page - 1" pageSize="4" (page)="changePage($event)">
+</mat-paginator>

@@ -6,6 +6,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 const MATERIAL_COMPONENTS = [
   MatButtonModule,
@@ -13,7 +14,8 @@ const MATERIAL_COMPONENTS = [
   MatGridListModule,
   MatDividerModule,
   MatIconModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatPaginatorModule
 ];
 
 @NgModule({

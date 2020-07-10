@@ -3,7 +3,11 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { HttpClient } from '@angular/common/http';
 
+import { RouterTestingModule } from '@angular/router/testing';
+
 import { RepoListComponent } from './repo-list.component';
+
+import { MaterialModule } from '../../../material/material.module';
 
 describe('RepoListComponent', () => {
   let component: RepoListComponent;
@@ -14,7 +18,7 @@ describe('RepoListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ RepoListComponent ],
-      imports: [ HttpClientTestingModule ]
+      imports: [ HttpClientTestingModule, RouterTestingModule, MaterialModule ]
     })
     .compileComponents();
   }));
@@ -26,10 +30,10 @@ describe('RepoListComponent', () => {
     
     component = fixture.componentInstance;
     component.repos = [
-      { 'id': '5436534653' },
-      { 'id': '5643643654' },
-      { 'id': '5675676554' },
-      { 'id': '2354453454' }
+      { 'name': 'auto_migrations' },
+      { 'name': 'blackjaxcode' },
+      { 'name': 'errcountcode' },
+      { 'name': 'git-server' }
     ];
 
     fixture.detectChanges();
@@ -41,7 +45,7 @@ describe('RepoListComponent', () => {
 
   it('should render 4 repo cards with id', () => {
     for (let repo of component.repos) {
-      let element = fixture.nativeElement.querySelector('#' + repo['id']);
+      let element = fixture.nativeElement.querySelector('#' + repo['name']);
       expect(element).toBeTruthy();
     }
   });

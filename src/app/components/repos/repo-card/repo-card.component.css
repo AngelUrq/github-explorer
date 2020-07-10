@@ -1,0 +1,28 @@
+.card {
+    width: 20vw;
+}
+
+.card-content {
+    margin-top: 20px;
+}
+
+.card-title {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.account-icon {
+    float: right;
+}
+
+.btn-card {
+    font-size: 0.75em;
+    display: block;
+    width: 50%;
+}

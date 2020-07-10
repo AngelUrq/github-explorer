@@ -5,6 +5,8 @@ import { HttpClient } from '@angular/common/http';
 
 import { UserListComponent } from './user-list.component';
 
+import { MaterialModule } from '../../../material/material.module';
+
 describe('UserListComponent', () => {
   let component: UserListComponent;
   let fixture: ComponentFixture<UserListComponent>;
@@ -14,7 +16,7 @@ describe('UserListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ UserListComponent ],
-      imports: [ HttpClientTestingModule ]
+      imports: [ HttpClientTestingModule, MaterialModule ]
     })
     .compileComponents();
   }));

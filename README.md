@@ -2,6 +2,10 @@
 
 This project uses the GitHub REST API v3 to get a list of users and their repositories. It is developed in Angular 10, with Angular Material as CSS Framework.
 
+## Demo
+
+Running app in [GitHub Pages](https://angelurq.github.io/github-explorer)
+
 ## Usage
 
 ### Users Page

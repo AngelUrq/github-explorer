@@ -24,6 +24,10 @@ Once a user is selected, a list of repositories will show up, it contains info a
 
 All data retrieved from API will be stored in the local storage for the next two hours, so the next time you refresh the app this data will be loaded from the cache.
 
+## Running from source
+
+Run `ng serve` to run in a development server.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

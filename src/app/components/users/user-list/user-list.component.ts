@@ -52,10 +52,7 @@ export class UserListComponent implements OnInit {
 
       let difference = now.valueOf() - savedDate.valueOf();
       let minutes = Math.round(((difference % 86400000) % 3600000) / 60000);
-      
-      console.log(minutes);
-      console.log(data.date);
-      
+
       return minutes <= 120;
     }
 
@@ -78,11 +75,9 @@ export class UserListComponent implements OnInit {
       users: this.users,
       date: new Date().toJSON(),
       next: this.next
-    }
+    };
 
     localStorage.setItem('users', JSON.stringify(data));
-    console.log('saving in cache');
-    
   }
 
 }

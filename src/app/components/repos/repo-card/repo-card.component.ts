@@ -18,4 +18,8 @@ export class RepoCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openGitHub(): void {
+    window.open(this.url, '_blank');
+  }
+
 }

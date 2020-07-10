@@ -12,13 +12,17 @@ import { UserListComponent } from './components/users/user-list/user-list.compon
 
 import { AppConfigService } from './services/config/app-config.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { RepoListComponent } from './components/repos/repo-list/repo-list.component';
+import { RepoCardComponent } from './components/repos/repo-card/repo-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserCardComponent,
     UserListComponent,
-    NavbarComponent
+    NavbarComponent,
+    RepoListComponent,
+    RepoCardComponent
   ],
   imports: [
     BrowserModule,

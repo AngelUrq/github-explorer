@@ -2,13 +2,16 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UserCardComponent } from './user-card.component';
 
+import { MaterialModule } from '../../../material/material.module';
+
 describe('UserCardComponent', () => {
   let component: UserCardComponent;
   let fixture: ComponentFixture<UserCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserCardComponent ]
+      declarations: [ UserCardComponent ],
+      imports: [ MaterialModule ]
     })
     .compileComponents();
   }));

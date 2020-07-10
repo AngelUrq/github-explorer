@@ -1,0 +1,20 @@
+<mat-card class="card">
+    <mat-card-title class="card-title">
+        <span>{{ name }}</span>
+        <mat-icon class="account-icon">code</mat-icon>
+    </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content class="card-content">
+        <p>{{ description }}</p>
+        <ul>
+            <li><b>Forks</b>: {{ forks }}</li>
+            <li><b>Open Issues</b>: {{ openIssues }}</li>
+        </ul>
+    </mat-card-content>
+    <mat-card-actions>
+        <button id="github-button" class="btn-card" mat-raised-button color="accent">
+            <mat-icon>code</mat-icon>
+            Open in GitHub
+        </button>
+    </mat-card-actions>
+</mat-card>

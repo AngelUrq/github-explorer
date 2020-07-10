@@ -14,7 +14,7 @@ describe('UserService', () => {
     });
 
     service = TestBed.get(UserService);
-    service.getURL = "https://api.github.com/users?per_page=4";
+    service.getUsersURL = "https://api.github.com/users?per_page=4";
     httpTestingController = TestBed.get(HttpTestingController);
   });
 
@@ -30,11 +30,11 @@ describe('UserService', () => {
       { 'login': 'pjhyett' }
     ];
 
-    service.get('').subscribe(response => {
+    service.getUsers('').subscribe(response => {
       expect(response.body.length).toBe(4);
     });
 
-    const request = httpTestingController.expectOne(`${service.getURL}`);
+    const request = httpTestingController.expectOne(`${service.getUsersURL}`);
 
     expect(request.request.method).toBe('GET');
 

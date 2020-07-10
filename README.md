@@ -12,13 +12,13 @@ Running app in [GitHub Pages](https://angelurq.github.io/github-explorer)
 
 Here is a GitHub users list, contains info like their profile picture, username, a link to GitHub page and a button to explore their repositories. Click on the arrow to get the next 4 users.
 
-![Users page](https://i.imgur.com/Azmyicy.png)
+![Users page](https://i.ibb.co/kMdgytm/pag1.png)
 
 ### Repos Page
 
 Once a user is selected, a list of repositories will show up, it contains info about the repo name, description, number of forks, number of issues and a link to GitHub. This section is paginated, so you can click in the arrows to go the next page.
 
-![Repos page](https://i.imgur.com/WSFyWKl.png)
+![Repos page](https://i.ibb.co/5jmNyBw/pag23.png)
 
 ### Cache
 
